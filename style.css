@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+header {
+    padding: 16px;
+    background-color: lightseagreen;
+    color: black;
+    text-align: center;
+    grid-area: header;
+    margin: 0px;
+    padding: 8px;
+    font-family:"Snell Roundhand";
+    text-shadow: 2px 5px 5px lightblue;
+}
+
+#links{
+    display: flex;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#img_1 {
+    height: 12vh;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+#nav-ul {
+    display: flex;
+    font-family: "Apple Chancery";
+    text-decoration: none;
+    flex-direction: column;
+    padding: 8px;
+    margin: 18px;
+    background-color: lightblue;
+    color: white;
+    gap: 10vh;
+}
+
+#nav-ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-ul > li {
+    padding: 10px 20px;
+    margin: 10px; 
+    background-color: lightseagreen; 
+    color: black;
+    text-align: center; 
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px; 
+    border: 2px groove black; 
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#nav-ul > li {
+    padding: 8px;
+    margin: 18px;
+    background-color: lightseagreen;
+    color: inherit;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    display: inline-block; 
+}
+
+.buttonlink {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightseagreen; 
+    color: black; 
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#nav-ul > li:hover {
+    background-color: darkcyan;
+    transform: scale(1.05);
+}
+#menu {
+    padding: 1px;
+    background-color: lightblue;
+    grid-area: menu;
+    font-family: "Serif";
+    align-items: center;
+}
+
+nav{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+#main-content{
+    padding: 32px;
+    grid-area: main;
+}
+
+#main-title{
+    text-align: center;
+    font-family: "Apple Chancery";
+    font-weight: 200px;
+}
+
+#p1 {
+    text-align: center;
+}
+
+img {
+    height: 25vh;
+    border-radius: 17%;
+    position: relative;
+    right: 40%;
+    left: 27%;
+}
+
+#Ingredients{
+    /* text-align: center; */
+    font-family: "Apple Chancery";
+    font-size: 20px;
+
+}
+#instructions{
+    /* text-align: center; */
+    font-family: "Apple Chancery";
+    font-size: 20px;
+}
+
+ul > li{
+    list-style-position: inside;
+    left: 100px;
+}
+
+#footer-heading{
+    font-family: "Apple Chancery";
+    font-weight: bold;
+}
+
+footer {
+    padding: 16px;
+    background-color: lightseagreen;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    grid-area: footer;
+}
+
+#newsletter{
+    text-align: center;
+}
+
+#sign-up{
+    font-family: "Apple Chancery";
+}
+
+#copywrite {
+    font-size: small;
+    background-color: white;
+}
+
+#footer-ul{
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div > li {
+    margin-left: 12px;
+}
+
+/* #footer-ul > div > li > a {
+    color: black;
+} */
+
+#grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer" 
+    ;
+    grid-template-columns: 1fr 6fr;
+}
